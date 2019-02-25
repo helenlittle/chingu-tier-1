@@ -2,17 +2,33 @@
 	HL: CSS file for Chingu Tier 1 prework
 */
 
+/* General things */
+
 body {
 	color: rgba(0,0,0,.75);
     font-family: Signika,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     font-weight: 300;
     line-height: 1.5;
+  margin: 0px;
 }
 
 header, footer, nav, section {
 	display: block;
 }
 
+.container-flex {
+	display: flex;
+}
+
+.page-full {
+	width: 100%;
+}
+
+.page-half {
+	width: 50%
+}
+
+/* Header and navigation */
 header {
 	background-color: #40596b;
 	font-size: 1.25rem;
@@ -32,11 +48,36 @@ nav li {
 }
 
 nav a {
-	transition: color 2s, ease;
+	-webkit-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;
 	color: #ffd05a;
     text-decoration: none;
 }
 
 nav a:hover {
 	color: #ffffff;
+}
+
+
+/* Home section */
+
+#home {
+	background-color: #55c0ec
+}
+
+.home-description h1 {
+	color: #40596b;
+}
+
+.home-description p {
+	color: #ffffff;
+}
+
+.home-description .button {
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.home-description .button:hover{
+	background-color: #55c0ec; /*Testing. Change this to a lighter blue
 }
