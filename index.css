@@ -24,6 +24,7 @@ nav ul {
 	align-items: center;
 	justify-content: center;
 	padding: 1em 0;
+	margin: 0px;
 }
 
 nav li {
@@ -31,6 +32,11 @@ nav li {
 }
 
 nav a {
+	transition: color 2s, ease;
 	color: #ffd05a;
     text-decoration: none;
+}
+
+nav a:hover {
+	color: #ffffff;
 }
