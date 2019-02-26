@@ -9,15 +9,18 @@ body {
     font-family: Signika,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     font-weight: 300;
     line-height: 1.5;
-  margin: 0px;
+    margin: 0px;
 }
 
 header, footer, nav, section {
 	display: block;
+  font-weight: 1.2;
 }
 
 .container-flex {
 	display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .page-full {
@@ -25,7 +28,7 @@ header, footer, nav, section {
 }
 
 .page-half {
-	width: 50%
+	width: 50%;
 }
 
 /* Header and navigation */
@@ -65,12 +68,25 @@ nav a:hover {
 	background-color: #55c0ec
 }
 
+.home-description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-description h1 {
 	color: #40596b;
+  font-size: 50pt;
+  font-weight: normal;
+  margin: 0px;
 }
 
 .home-description p {
 	color: #ffffff;
+  font-size: 18pt;
+  width: 70%;
 }
 
 .home-description .button {
@@ -78,6 +94,50 @@ nav a:hover {
 	border-radius: 5px;
 }
 
+.button {
+  padding: 10px 50px;
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.home-description .button img{
+	width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
 .home-description .button:hover{
-	background-color: #55c0ec; /*Testing. Change this to a lighter blue
+	background-color: #55c0ec; /*Testing. Change this to a lighter blue */
+}
+
+.home-description a {
+  text-decoration: none;
+  color: #40596b;
+}
+
+/* Bot */
+
+.home-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+/* About Section*/
+
+h3 {
+  text-align: center;
+  width: 100%;
+  font-size: 30pt;
+  font-weight: normal;
+}
+
+#about p {
+  padding: 0px 30px;
+  font-size: 14pt;
 }
