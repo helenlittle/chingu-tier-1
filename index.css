@@ -6,7 +6,7 @@
 
 body {
 	color: rgba(0,0,0,.75);
-    font-family: Signika,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-family: Signika, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 1.5;
     margin: 0px;
@@ -32,8 +32,44 @@ header, footer, nav, section {
 	width: 50%;
 }
 
+a {
+  text-decoration: none;
+  color: #40596b;
+}
+
 code {
   color: crimson;
+}
+
+/* Buttons */
+.button {
+  border-radius: 5px;
+  padding: 10px 50px;
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+  transition: transform 5s ease-in-out;
+}
+
+.button img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.button:hover img {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 /* Header and navigation */
@@ -59,7 +95,6 @@ nav a {
 	-webkit-transition: color 0.5s ease-out;
 	transition: color 0.5s ease-out;
 	color: #ffd05a;
-    text-decoration: none;
 }
 
 nav a:hover {
@@ -94,35 +129,19 @@ nav a:hover {
   width: 70%;
 }
 
-.button {
-  border-radius: 5px;
-}
-
-.home-description .button {
+#home .button {
 	background-color: #ffffff;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.button {
-  padding: 10px 50px;
-  font-size: 18pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
+#home .button:hover{
+	opacity: 0.9;
 }
 
-.button img{
-	width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-
-.home-description .button:hover{
-	background-color: #55c0ec; /*Testing. Change this to a lighter blue */
-}
-
-.home-description a {
+#home a {
   text-decoration: none;
   color: #40596b;
 }
@@ -141,6 +160,7 @@ nav a:hover {
 h3 {
   text-align: center;
   width: 100%;
+  margin: 20px;
   font-size: 28pt;
   font-weight: normal;
 }
@@ -178,6 +198,10 @@ h3 {
 }
 
 /* cta */
+
+#cta {
+  text-align: center;
+}
 
 #cta .button {
   background-color: #40596b
