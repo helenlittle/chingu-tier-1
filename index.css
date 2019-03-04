@@ -17,6 +17,10 @@ header, footer, nav, section {
   font-weight: 1.2;
 }
 
+.container {
+  padding: 10px;
+}
+
 .container-flex {
 	display: flex;
   flex-wrap: wrap;
@@ -213,4 +217,23 @@ h3 {
   background-color: #40596b;
   margin: 40px auto;
   color: white;
+}
+
+/* Footer */
+
+footer {
+  background-color: #40596b;
+  text-align: center;
+  color: white;
+  font-size: 10pt;
+}
+
+footer p {
+  opacity: 0.8;
+  margin: 5px auto;
+}
+
+footer a{
+  color: white;
+  text-decoration: underline;
 }
