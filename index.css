@@ -24,6 +24,10 @@ header, footer, nav, section {
   justify-content: center;
 }
 
+.container-flex-narrow {
+  width: 500px;
+}
+
 .page-full {
 	width: 100%;
 }
@@ -201,8 +205,12 @@ h3 {
 
 #cta {
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #cta .button {
-  background-color: #40596b
+  background-color: #40596b;
+  margin: 40px auto;
+  color: white;
 }
