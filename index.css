@@ -237,3 +237,15 @@ footer a{
   color: white;
   text-decoration: underline;
 }
+
+/* Scroll to top button */
+
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffd05a;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
