@@ -3,6 +3,9 @@
 */
 
 /* General things */
+html {
+  scroll-behavior: smooth;
+}
 
 .not-visible {
   opacity: 0;
